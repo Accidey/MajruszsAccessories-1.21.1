@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "display": {
+    "icon": {
+      "item": "majruszsaccessories:tamed_potato_beetle"
+    },
+    "title": {
+      "translate": "advancements.majruszsaccessories.tamed_potato_beetle.title"
+    },
+    "description": {
+      "translate": "advancements.majruszsaccessories.tamed_potato_beetle.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "picked_up_accessory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "majruszsaccessories:tamed_potato_beetle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "picked_up_accessory"
+    ]
+  ]
+}

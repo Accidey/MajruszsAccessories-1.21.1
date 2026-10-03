@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "item": "majruszsaccessories:certificate_of_taming"
+    },
+    "title": {
+      "translate": "advancements.majruszsaccessories.certificate_of_taming.title"
+    },
+    "description": {
+      "translate": "advancements.majruszsaccessories.certificate_of_taming.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "picked_up_accessory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "majruszsaccessories:certificate_of_taming"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "picked_up_accessory"
+    ]
+  ]
+}

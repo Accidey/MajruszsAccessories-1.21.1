@@ -1,0 +1,40 @@
+{
+  "required": true,
+  "package": "com.xulai.majruszlibrary.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "MixinClientLevel",
+    "MixinGuiGraphics",
+    "MixinKeyboardHandler",
+    "MixinMinecraft"
+  ],
+  "mixins": [
+    "IMixinMob",
+    "IMixinServerLevel",
+    "MixinAbstractHorse",
+    "MixinBrewingStandBlockEntity",
+    "MixinBrushableBlockEntity",
+    "MixinCommands",
+    "MixinCreativeModeTab",
+    "MixinEntity",
+    "MixinExperienceOrb",
+    "MixinFishingHook",
+    "MixinInventoryMenu",
+    "MixinItem",
+    "MixinItemStack",
+    "MixinLivingEntity",
+    "MixinMinecraftServer",
+    "MixinMob",
+    "MixinPlayer",
+    "MixinPlayerList",
+    "MixinReloadableServerResources",
+    "MixinTamableAnimal",
+    "MixinVillager",
+    "MixinWanderingTrader",
+    "neoforge/MixinLootTable"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

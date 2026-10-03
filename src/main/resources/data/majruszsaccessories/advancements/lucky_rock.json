@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:story/mine_stone",
+  "display": {
+    "icon": {
+      "item": "majruszsaccessories:lucky_rock"
+    },
+    "title": {
+      "translate": "advancements.majruszsaccessories.lucky_rock.title"
+    },
+    "description": {
+      "translate": "advancements.majruszsaccessories.lucky_rock.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "picked_up_accessory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "majruszsaccessories:lucky_rock"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "picked_up_accessory"
+    ]
+  ]
+}
