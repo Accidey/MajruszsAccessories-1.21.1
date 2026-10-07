@@ -62,7 +62,7 @@ class ClassFinder {
 	private List< Class< ? > > findClassesInPackage() {
 		List< Class< ? > > classes = new ArrayList<>();
 		URL resource = this.getClass().getClassLoader().getResource( this.getModPackagePath() );
-		if( resource == null || !"file".equals( resource.getProtocol() ) ) {
+		if( resource == null || !( "file".equals( resource.getProtocol() ) || "union".equals( resource.getProtocol() ) ) ) {
 			return classes;
 		}
 
